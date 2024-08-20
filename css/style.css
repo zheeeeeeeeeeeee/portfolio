@@ -63,7 +63,7 @@ body {
 }
 
 .main-container {
-    padding: 100px 0;
+    padding: 25px 0;
 }
 
 .center {
@@ -239,8 +239,13 @@ h5 {
 .box-logo {
     display: block;
     filter: invert(100%);
-    padding: 20px;
+    padding: 13px;
+    padding-left: 20px;
     --animate-duration: 0.5s; /* Adjust to desired duration for animation*/
+}
+
+.box-logo img{
+    fill:#ffffff;
 }
 
 .box-primary-nav-trigger {
@@ -305,7 +310,7 @@ h5 {
 
 .box-primary-nav-trigger .box-menu-icon.is-clicked::before,
 .box-primary-nav-trigger .box-menu-icon.is-clicked::after {
-    background-color: f5f5f5;
+    background-color: #f5f5f5;
 }
 
 .box-primary-nav-trigger .box-menu-icon.is-clicked::before {
@@ -350,7 +355,7 @@ h5 {
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.96);
+    background: rgba(57, 57, 57, 0.96);
     z-index: 2;
     text-align: center;
     padding: 50px 0;
@@ -385,7 +390,7 @@ h5 {
     border-radius: 0.25em;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    color: #393939;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -747,6 +752,41 @@ b i:last-child {
     display: block;
 }
 
+.twobyonebox {
+    max-width: 1000px;
+    aspect-ratio: 2 / 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.onebyonebox{
+    max-height: 1000px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.squareimage {
+    transform: scale(1.8);
+    transition: transform 500ms ease-in-out;
+}
+
+.squareimage.expanding {
+    transform: scale(1); /* This now matches the end state */
+}
+
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 .portfolio_item .portfolio_item_hover {
     position: absolute;
     top: 0px;
@@ -759,6 +799,7 @@ b i:last-child {
     opacity: 0;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    z-index:1;
 }
 
 .portfolio_item .portfolio_item_hover .item_info {
@@ -775,7 +816,7 @@ b i:last-child {
 
 .portfolio_item .portfolio_item_hover .item_info span {
     display: block;
-    color: #393939;
+    color: #ffffff;
     font-size: 18px;
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
@@ -813,6 +854,36 @@ b i:last-child {
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
+
+.portfolio_item.clicked .portfolio_item_hover {
+    animation: reverseHover 0.4s ease-in-out forwards;
+}
+
+@keyframes reverseHover {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Thumbnail transition on the home page */
+.transition-thumbnail {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.transition-image {
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Ensures initial width is correct */
+    height: auto; /* Adjust height automatically */
+    transition: transform 0.5s ease-in-out; /* Smooth scaling */
+}
+
+/**/
 
 .portfolio .categories-grid .categories ul li {
     float: left;
@@ -871,7 +942,7 @@ footer img {
     right: 10px;
     text-align: center;
     color: #393939;
-    background: rgba(255, 191, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -903,25 +974,57 @@ footer img {
 }
 
 
-/* About page
+/* top-bar
 ==================================================*/
 
 .top-bar {
-    color: #333;
-    padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/landscape.jpeg);
-    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/landscape.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+    position: relative;
+    width:100%;
     text-align: center;
+    overflow: hidden;
+    padding: 0;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
 }
+
+.top-bar-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: 0;
+}
+
+.top-bar-content {
+    position: absolute;
+    z-index: 1; /* Ensure the content is on top of the image */
+    top: 85%; /* Adjust this value to move the content lower or higher */
+    transform: translateY(-50%); /* Centers the content vertically at the given top value */
+}
+
+.fadeIn {
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 1s ease-in forwards; /* Add fadeIn animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 .top-bar h1 {
     font-size: 60px;
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: 700;
-    color: #999;
+    color: #ffffff;
     line-height: 50px;
 }
 
@@ -929,17 +1032,29 @@ footer img {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #777;
+    color: #393939;
 }
 
 .top-bar p a {
-    color: #777;
+    color: #393939;
+}
+
+.top-bar p a2 {
+    color: #a4a4a4;
 }
 
 .top-bar p a:hover,
 .top-bar p a:focus {
     color: #555;
     text-decoration: none;
+    cursor: default;
+}
+
+.top-bar p a2:hover,
+.top-bar p a2:focus {
+    color: #dadada;
+    text-decoration: none;
+    cursor: default;
 }
 
 .social-ul {
@@ -1196,7 +1311,7 @@ textarea:focus {
         font-size: 12px;
     }
     .main-container {
-        padding: 50px 0;
+        padding: 0 0;
     }
 }
 
