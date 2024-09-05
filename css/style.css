@@ -908,6 +908,32 @@ b i:last-child {
     padding-top: 55px;
 }
 
+/* video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    aspect-ratio: 16/9;
+    margin-left:10%;
+}
+
+/* technical drawing */
+.tech-drawing {
+    display: block;
+    filter: invert(100%);
+    padding-bottom: 20px;
+}
+
+.tech-drawing img {
+    fill:#ffffff;
+}
 
 /* footer
 ==================================================*/
