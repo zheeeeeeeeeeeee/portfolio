@@ -768,12 +768,12 @@ b i:last-child {
     align-items: center; /* Center vertically */
 }
 
-.squareimage {
+.cuttosquare {
     transform: scale(1.8);
     transition: transform 500ms ease-in-out;
 }
 
-.squareimage.expanding {
+.cuttosquare.expanding {
     transform: scale(1); /* This now matches the end state */
 }
 
