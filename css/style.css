@@ -465,7 +465,7 @@ b i:last-child {
     letter-spacing: 4px;
     text-transform: uppercase;
     color: #999;
-    line-height: 1.7
+    line-height: 1.7;
 }
 
 
@@ -1310,14 +1310,12 @@ textarea:focus {
     .video-container iframe {
         padding-bottom: 0px;
     }
-}
-@media only screen and (max-width: 670px) {
     .box-headline {
         font-size: 100px;
     }
-    .box-intro h5 {
-        font-size: 12px;
-    }
+}
+@media only screen and (max-width: 670px) {
+
     .box-primary-nav a {
         padding: 5px 1em;
         font-size: 14px;
@@ -1337,12 +1335,17 @@ textarea:focus {
     }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 600px) {
     .box-headline {
         font-size: 80px;
     }
     .box-intro h5 {
         font-size: 12px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .box-headline {
+        font-size: 70px;
     }
     .main-container {
         padding: 0 0;
@@ -1351,10 +1354,7 @@ textarea:focus {
 
 @media only screen and (max-width: 420px) {
     .box-headline {
-        font-size: 50px;
-    }
-    .box-intro h5 {
-        font-size: 12px;
+        font-size: 60px;
     }
     .top-bar h1 {
         font-size: 30px;
