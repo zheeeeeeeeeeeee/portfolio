@@ -1345,7 +1345,7 @@ textarea:focus {
 }
 @media only screen and (max-width: 520px) {
     .box-headline {
-        font-size: 70px;
+        font-size: 60px;
     }
     .main-container {
         padding: 0 0;
@@ -1354,7 +1354,7 @@ textarea:focus {
 
 @media only screen and (max-width: 420px) {
     .box-headline {
-        font-size: 60px;
+        font-size: 50px;
     }
     .top-bar h1 {
         font-size: 30px;
