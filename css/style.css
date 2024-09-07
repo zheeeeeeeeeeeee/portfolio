@@ -1164,22 +1164,18 @@ footer img {
 }
 
 /* This styles the aside container */
-#aSide {
-    height: 600px;
-    width: 600px;
-    position: absolute;
-    top: calc(50% - 250px);
-    right: 7%;
+.model {
+    width: 100%;
+    display:block;
+    position:relative;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    
 }
 
 /* This styles the 3D object inserted in the aside container */
-#aSide model-viewer {
-    height: 600px;
-    width: 600px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: none;
+.model model-viewer {
+    width: 80%;
 }
 /* Services page
 ==================================================*/
