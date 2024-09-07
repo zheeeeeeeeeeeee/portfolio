@@ -1163,10 +1163,11 @@ footer img {
     color: #888;
 }
 
-/* This styles the aside container */
+/* 3d model */
 .model {
     width: 100%;
-    display:block;
+    height: 40vh;
+    display:flex;
     position:relative;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -1176,7 +1177,15 @@ footer img {
 /* This styles the 3D object inserted in the aside container */
 .model model-viewer {
     width: 80%;
+    height: 100%;
+    
 }
+
+model-viewer {
+    width: var(--host-width, 300px); /* Default to 300px */
+    height: var(--host-height, 150px); /* Default to 150px */
+  }
+
 /* Services page
 ==================================================*/
 
