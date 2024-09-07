@@ -19,9 +19,12 @@
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
 
-
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
+
+    <!-- model viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </head>
 
 <body>
@@ -62,11 +65,16 @@
     <!-- top-bar -->
     <div class="top-bar">
         <img src="img/ambulance_1.jpeg" alt="Top Bar Image" class="top-bar-img" />
-        <div class="top-bar-content fadeIn">
+        <div class="top-bar-content2 fadeIn" data-scroll-speed>
             <h1>Moving Health Off-Road Ambulance</h1>
-            <p><a href="#">March</a> / <a href="#">2023</a> / <a href="#">Design Object</a></p>
+            <p><a href="#">August</a> / <a href="#">2023</a> / <a href="#">Off-Road Vehicle</a></p>
+        </div>
+
+        <div class="mouse2">
+            <div class="scroll"></div>
         </div>
     </div>
+    
     <!-- end top-bar -->
     
     <!-- main-container -->
@@ -74,23 +82,24 @@
         
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">project title</h3>
-            <h5>Creative & Lorem ipsum dolor sit amet</h5>
+            <h3 class="text-uppercase">Moving Health Off-Road Ambulance</h3>
+            <h5>Emergency Transportation for Everyone</h5>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-9">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus ultimum cum ultimo sapientiae Et nemo nimium beatus est </p>
+            <p>Moving Health is an NGO in Ghana building off-road tricycle ambulances aimed to increase access to emergency healthcare in rural areas. Z's work for Moving Health focused on designing their next generation driver’s compartment.
+                 Past iterations have been limited by Ghana’s unique enviornment for manufacturing. The new design is laser cuttable and easily fabricated. Tangible results include a 2D and 3D model.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia </p>
+            <p>Continued work with Moving Health now focuses on electrifying the vehicles through the design of low-cost swappable batteries, swapping stations, and solar charging stations for off-road ambulances.</p>
         </div>
 
         <div class="col-md-3">
             <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Design</li>
-                <li><i class="ion-ios-circle-filled"></i> consectetur adipiscing</li>
-                <li><i class="ion-ios-circle-filled"></i> et gubernationis</li>
-                <li><i class="ion-ios-circle-filled"></i> Aliter enim nosmet</li>
+                <li><i class="ion-ios-circle-filled"></i> Rhino 3D</li>
+                <li><i class="ion-ios-circle-filled"></i> Fusion 360</li>
+                <li><i class="ion-ios-circle-filled"></i> Metal Laser Cut</li>
+                <li><i class="ion-ios-circle-filled"></i> Business Development</li>
             </ul>
             <div class="h-10"></div>
             <h4>Share</h4>
@@ -102,9 +111,8 @@
             </ul>
         </div>
 
-        <div class="col-md-12">
-            <img src="img/EZ_dont_handle_alone_3.jpg" alt="" class="img-responsive" />
-            <div class="h-30"></div>
+        <div id="aSide">
+            <model-viewer src="img/3dobjects/ambulance.obj" alt="Driver's Compartment" auto-rotate camera-controls ar ios-src="img/3dobjects/ambulance.obj"></model-viewer>
         </div>
 
         
@@ -135,6 +143,7 @@
     <script src="js/animated-headline.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/animated-hover.js"></script>
+    <script src="js/scroll.js"></script>
 
 
     <!--  custom script -->

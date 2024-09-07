@@ -1052,13 +1052,13 @@ footer img {
 .top-bar-content2 {
     position: fixed;
     z-index: 1; 
-    top: 30vw; /* Fixed top position */
+    top: 22.5vw; /* Fixed top position */
     transform: translateY(0); /* Start at 0 */
 }
 
 /* Default speed */
 :root {
-    --scroll-speed: 2.5;
+    --scroll-speed: 3;
   }
 
 .fadeIn {
