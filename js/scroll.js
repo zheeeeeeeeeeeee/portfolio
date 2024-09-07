@@ -1,3 +1,4 @@
+// Slow scroll
 $.fn.moveIt = function(){
     var $window = $(window);
     var instances = [];
@@ -41,4 +42,22 @@ moveItItem.prototype.update = function(scrollTop){
 // Initialization
 $(function(){
     $('[data-scroll-speed]').moveIt();
+});
+
+// Scroll down guide disappear
+$(window).on('scroll', function() {
+    var scrollTop = $(window).scrollTop();
+    var mouse2 = $('.mouse2');
+    
+    if (scrollTop > 100) { // Change this value to your scroll threshold
+        mouse2.css({
+            'opacity': '0',
+            'visibility': 'hidden'
+        });
+    } else {
+        mouse2.css({
+            'opacity': '1',
+            'visibility': 'visible'
+        });
+    }
 });

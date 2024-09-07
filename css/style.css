@@ -483,6 +483,22 @@ b i:last-child {
     -webkit-animation: intro 1s;
     animation: intro 1s;
 }
+.mouse2 {
+    position: fixed;
+    width: 22px;
+    height: 42px;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -12px;
+    border-radius: 15px;
+    border: 2px solid #888;
+    -webkit-animation: intro 1s;
+    animation: intro 1s;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+    opacity: 1; /* Default state */
+    visibility: visible; /* Default state */
+}
 
 .scroll {
     display: block;
@@ -921,7 +937,7 @@ b i:last-child {
     left: 0;
     width: 100%;
     height: 100%;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 /* technical drawing */
@@ -1027,6 +1043,13 @@ footer img {
 }
 
 .top-bar-content {
+    position: absolute;
+    z-index: 1; 
+    top: 85%; /* Fixed top position */
+    transform: translateY(-50%); /* Start at 0 */
+}
+
+.top-bar-content2 {
     position: fixed;
     z-index: 1; 
     top: 30vw; /* Fixed top position */
