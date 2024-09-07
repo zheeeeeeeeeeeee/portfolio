@@ -1027,16 +1027,22 @@ footer img {
 }
 
 .top-bar-content {
-    position: absolute;
-    z-index: 1; /* Ensure the content is on top of the image */
-    top: 85%; /* Adjust this value to move the content lower or higher */
-    transform: translateY(-50%); /* Centers the content vertically at the given top value */
+    position: fixed;
+    z-index: 1; 
+    top: 30vw; /* Fixed top position */
+    transform: translateY(0); /* Start at 0 */
 }
+
+/* Default speed */
+:root {
+    --scroll-speed: 2.5;
+  }
 
 .fadeIn {
     opacity: 0; /* Start with 0 opacity */
     animation: fadeIn 1s ease-in forwards; /* Add fadeIn animation */
 }
+
 
 @keyframes fadeIn {
     from {
@@ -1056,6 +1062,32 @@ footer img {
     color: #ffffff;
     line-height: 50px;
 }
+
+.top-bar h2 {
+    font-size: 60px;
+    text-transform: none;
+    font-weight: 700;
+    color: transparent;
+    line-height: 50px;
+    background-image: linear-gradient(to right, #F7E300, #00FFFF,#00FFCC, #00BFFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    background-position: -100%;
+    animation: animatedText 3s infinite alternate-reverse;
+}
+
+@keyframes animatedText {
+    from{
+        background-position: 0%;
+        background-size: 300%;
+    }
+    to{
+        background-position: 100%;
+        background-size: 100%;
+    }
+}
+
 
 .top-bar p {
     font-size: 15px;
@@ -1288,7 +1320,7 @@ textarea:focus {
 
 /* Responsive media queries
 ==================================================*/
-
+  
 @media (max-width: 991px) {
     .portfolio .categories-grid span {
         margin-bottom: 0;
@@ -1304,6 +1336,9 @@ textarea:focus {
     .col-md-6 h3 {
         margin-top: 30px;
     }
+    :root {
+        --scroll-speed: 2;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1313,6 +1348,9 @@ textarea:focus {
     .box-headline {
         font-size: 100px;
     }
+    :root {
+        --scroll-speed: 2;
+      }
 }
 @media only screen and (max-width: 670px) {
 
@@ -1330,9 +1368,16 @@ textarea:focus {
         font-size: 40px;
         line-height: 30px;
     }
+    .top-bar h2 {
+        font-size: 40px;
+        line-height: 30px;
+    }
     .portfolio .categories-grid .categories ul li {
         float: none;
     }
+    :root {
+        --scroll-speed: 2;
+      }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1342,6 +1387,9 @@ textarea:focus {
     .box-intro h5 {
         font-size: 12px;
     }
+    :root {
+        --scroll-speed: 2;
+      }
 }
 @media only screen and (max-width: 520px) {
     .box-headline {
@@ -1350,6 +1398,9 @@ textarea:focus {
     .main-container {
         padding: 0 0;
     }
+    :root {
+        --scroll-speed: 2;
+      }
 }
 
 @media only screen and (max-width: 420px) {
@@ -1358,6 +1409,11 @@ textarea:focus {
     }
     .top-bar h1 {
         font-size: 30px;
-        line-height: 30px;
     }
+    .top-bar h2 {
+        font-size: 30px;
+    }
+    :root {
+        --scroll-speed: 2;
+      }
 }
