@@ -1056,6 +1056,12 @@ footer img {
     transform: translateY(0); /* Start at 0 */
 }
 
+.top-bar-content3 {
+    position: absolute;
+    z-index: 1; 
+    top: 25%; /* Fixed top position */
+    transform: translateY(-50%); /* Start at 0 */
+}
 /* Default speed */
 :root {
     --scroll-speed: 3;
