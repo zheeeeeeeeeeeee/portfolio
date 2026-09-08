@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zhixing-chen.com/sitemap.xml

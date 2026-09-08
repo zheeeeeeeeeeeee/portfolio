@@ -1,0 +1,26 @@
+# Zhixing Chen
+
+> Zhixing Chen (Z) is a product designer, mechanical engineer and musician trained at MIT, now the founder of Stage Intelligence, which builds AI tools for live production.
+
+Zhixing Chen (Z) is a product designer, mechanical engineer and musician. Studied mechanical engineering and music at MIT. Founded Stage Intelligence in 2026 (https://stage-intelligence.com), which builds AI tools for live production teams. Published Be the Beat at the NeurIPS 2024 Creative AI track and TEI 2025. Ma-Sha Prize, MIT 2.007 Robot Competition. Worked at the Bristol Robotics Laboratory in 2024.
+
+## Projects
+
+- [Be the Beat](https://zhixing-chen.com/bethebeat.html): Be the Beat is an AI boombox that listens to a dancer's movement and finds music to match its style, energy and tempo. NeurIPS 2024 Creative AI track, TEI 2025.
+- [M.A.R.L.I.N.](https://zhixing-chen.com/marlin.html): MARLIN is a vision enhancement system for commercial divers in turbid water: augmented reality projection, stereoscopic depth and real-time enhancement. MIT 2.009 capstone, 2024.
+- [MagProprio SoftHand](https://zhixing-chen.com/maggie.html): Maggie is a fully 3D-printed, anatomically accurate, tendon-driven soft robotic hand with magnetic proprioception, designed and fabricated at the Bristol Robotics Laboratory.
+- [Whaley the Robot](https://zhixing-chen.com/whaley.html): Whaley is a competition robot built for MIT 2.007 with a bevel-gear spinner, two-way rack and pinion, scissor lift and modular chassis. Ma-Sha Prize for the most beautiful robot.
+- [don't handle alone](https://zhixing-chen.com/donthandlealone.html): don't handle alone is a two-player cooperative game in a pair of hexagonal capsules: match the light pixels before time runs out, with buttons whose functions change by level.
+- [in the stars](https://zhixing-chen.com/inthestars.html): in the stars is a modular timepiece where each friend is a star and their light shows whether they are free, busy or want to talk. Hangs as a personal constellation.
+- [Nimbus 2300](https://zhixing-chen.com/nimbus2300.html): Nimbus 2300 is a quadcopter built in four weeks for MIT's How to Make (Almost) Anything: carbon fiber wet layup frame, custom PCB, IMU-driven motor control.
+- [De Stijl Steps](https://zhixing-chen.com/destijlsteps.html): De Stijl Steps is a wooden lamp built on the vertical and horizontal geometry of the De Stijl movement. It stands on many faces, each giving a different light.
+- [Off-Road Ambulance](https://zhixing-chen.com/ambulance.html): Next-generation driver's compartment for Moving Health's off-road tricycle ambulances in rural Ghana: laser-cuttable, easy to fabricate locally, delivered as 2D and 3D models.
+- [Abyss Vivace](https://zhixing-chen.com/abyssvivace.html): Abyss Vivace is a hollow infinity-mirror electric guitar designed in CAD and cut on a CNC router, laser cutter and 3D printer, built on a $500 MIT ProjX grant.
+- [Starship Stool](https://zhixing-chen.com/starshipstool.html): Starship Stool is cut from one sheet of 18 gauge steel, bent by hand along pre-designed lines, with no external fasteners, and powder coated. Holds over 200 pounds.
+- [Snap Turtle](https://zhixing-chen.com/snapturtle.html): Snap Turtle is a reflex game: reach into the motorized turtle's jaws for fish tokens before it snaps shut, faster every round. Final project for MIT 2.00b Toy Design.
+
+## Contact
+
+- Email: zhixingc@mit.edu
+- LinkedIn: https://www.linkedin.com/in/zhixing-chen-0b6a5b221/
+- Site: https://zhixing-chen.com
